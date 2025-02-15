@@ -130,6 +130,43 @@ html {
     border: none;
     background-color: #f8f9fa;
   }
+
+  .service-card {
+    cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    border-color: #17a2b8;
+  }
+  
+  .ver-mas {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 5px 0;
+    color: #17a2b8;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .ver-mas i {
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover .ver-mas {
+    color: #138496;
+  }
+  
+  .service-card:hover .ver-mas i {
+    transform: translateX(5px);
+  }
+  
   
   /* --- Carrusel en Modal --- */
   .modal .carousel-item img {
