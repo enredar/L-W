@@ -1,0 +1,168 @@
+/* --- Fuente y Estilos Base --- */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Ajusta según la altura de tu navbar */
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem; /* 16px - tamaño base */
+    line-height: 1.6;
+  }
+  
+  /* --- Tipografía: Encabezados --- */
+  h1 {
+    font-size: 2.5rem; /* 40px */
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2rem; /* 32px */
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-size: 1.75rem; /* 28px */
+  }
+  
+  h4 {
+    font-size: 1.5rem; /* 24px */
+  }
+  
+  h5 {
+    font-size: 1.25rem; /* 20px */
+  }
+  
+  h6 {
+    font-size: 1rem; /* 16px */
+  }
+  
+  /* --- Navbar --- */
+  .navbar-custom {
+    background: linear-gradient(90deg, #0056b3, #17a2b8);
+  }
+  
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav-link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem; /* 16px */
+    padding: 0.75rem; /* Mejor área de clic */
+  }
+  
+  .navbar-brand img {
+    height: 40px;
+    width: auto;
+    border-radius: 8px; /* Redondeo para una integración más suave */
+    padding: 2px; /* Padding opcional */
+    background: white; /* Fondo blanco si el logo no tiene transparencia */
+  }
+  
+  /* --- Botones --- */
+  .btn {
+    font-size: 1rem; /* 16px */
+    padding: 0.75rem 1.25rem; /* Tamaño accesible */
+  }
+  
+  .btn-custom {
+    background: #17a2b8;
+    color: #fff;
+    border: none;
+    transition: background 0.3s ease;
+    border-radius: 0;
+  }
+  
+  .btn-custom:hover {
+    background: #138496; /* Hover más oscuro */
+  }
+  
+  /* --- Secciones Generales --- */
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  /* --- Hero Section --- */
+  .hero-section {
+    position: relative;
+    min-height: 100vh;
+    background: url('/assets/img/hero/hero-image.jpeg') no-repeat center center/cover;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);  /* Fondo oscuro para mejorar legibilidad */
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 20vh;
+    color: #fff;
+  }
+  
+/* --- Tarjetas (Card) --- */
+  .card {
+    border: 2px solid rgba(0, 0, 0, 0.15); /* Borde más visible */
+    border-radius: 8px; /* Suaviza los bordes */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra inicial */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: #17a2b8; /* Resalta el borde al pasar el mouse */
+  }
+  
+  /* --- Modal --- */
+  .modal-content {
+    border-radius: 0;
+  }
+  
+  .modal-header,
+  .modal-footer {
+    border: none;
+    background-color: #f8f9fa;
+  }
+  
+  /* --- Carrusel en Modal --- */
+  .modal .carousel-item img {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* --- Footer --- */
+  footer a:hover {
+    color: #17a2b8;
+  }
+  
+  /* --- Estilos Responsivos --- */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem; /* 32px */
+    }
+  
+    h2 {
+      font-size: 1.75rem; /* 28px */
+    }
+  
+    body {
+      font-size: 1.4rem; /* 15px */
+    }
+  
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+      font-size: 1rem; /* 14px en dispositivos pequeños */
+    }
+  
+    .btn {
+      font-size: 0.875rem; /* 14px para dispositivos más pequeños */
+    }
+  }
+  
