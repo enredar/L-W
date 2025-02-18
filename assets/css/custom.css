@@ -17,7 +17,7 @@ html {
   }
   
   h2 {
-    font-size: 2rem; /* 32px */
+    font-size: 2.2rem; /* 32px */
     font-weight: 600;
   }
   
@@ -86,7 +86,7 @@ html {
   .hero-section {
     position: relative;
     min-height: 100vh;
-    background: url('../../assets/img/hero/hero-image.jpeg') no-repeat center center/cover;
+    background: url('../../assets/img/hero/hero-image.png') no-repeat center center/cover;
   }
   
   .hero-overlay {
@@ -95,7 +95,7 @@ html {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);  /* Fondo oscuro para mejorar legibilidad */
+    background: rgba(0, 0, 0, 0.2);  /* Fondo oscuro para mejorar legibilidad */
   }
   
   .hero-content {
@@ -104,7 +104,51 @@ html {
     padding-top: 20vh;
     color: #fff;
   }
-  
+
+  .hero-content h1,
+  .hero-content p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .hero-content h2,
+  .hero-content p {
+    font-size: 2rem; 
+    font-weight: 600;
+  }
+
+/* --- Clientes: Slider Continuo --- */
+.client-slider {
+  overflow: hidden;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.client-slider-track {
+  display: flex;
+  width: calc(200%); /* Duplicamos el contenido para lograr el efecto continuo */
+  animation: scroll 30s linear infinite;
+}
+
+.client-slide {
+  flex: 0 0 auto;
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Keyframes para desplazamiento continuo */
+/* Ajusta la duración (30s) según la velocidad deseada */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
 /* --- Tarjetas (Card) --- */
   .card {
     border: 2px solid rgba(0, 0, 0, 0.15); /* Borde más visible */
