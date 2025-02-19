@@ -116,38 +116,6 @@ html {
     font-weight: 600;
   }
 
-/* --- Clientes: Slider Continuo --- */
-.client-slider {
-  overflow: hidden;
-  position: relative;
-  padding: 1rem 0;
-}
-
-.client-slider-track {
-  display: flex;
-  width: calc(200%); /* Duplicamos el contenido para lograr el efecto continuo */
-  animation: scroll 30s linear infinite;
-}
-
-.client-slide {
-  flex: 0 0 auto;
-  margin: 0 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Keyframes para desplazamiento continuo */
-/* Ajusta la duración (30s) según la velocidad deseada */
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
 
 /* --- Tarjetas (Card) --- */
   .card {
