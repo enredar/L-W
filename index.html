@@ -32,13 +32,15 @@
     </div>
   </nav>
 
-  <!-- Sección Hero -->
+<!-- Sección Hero -->
   <section id="hero" class="hero-section">
     <div class="hero-overlay"></div>
     <div class="hero-content container text-center">
-      <h1 class="display-4">Bienvenidos a Frío Urbano</h1>
-      <p class="lead">Soluciones logísticas integrales en transporte de alimentos y alquiler de espacios de frío.</p>
-      <a href="#contacto" class="btn btn-lg btn-custom mt-3">Contáctanos</a>
+      <div class="hero-text-box">
+        <h1 class="display-4">Bienvenidos a Frío Urbano</h1>
+        <p class="lead">Soluciones logísticas integrales en transporte de alimentos y alquiler de espacios de frío.</p>
+        <a href="#contacto" class="btn btn-lg btn-custom mt-3">Contáctanos</a>
+      </div>
     </div>
   </section>
 
@@ -69,9 +71,9 @@
 
 
 <!-- Sección Clientes -->
-<section id="clientes" class="py-5">
+<section id="clientes" class="py-5 section-clientes">
   <div class="container">
-    <h2 class="mb-4 text-center">Clientes que confían en nosotros</h2>
+    <h2 class="mb-4 text-center">Nuestros clientes.</h2>
     <div class="row">
       <!-- Cada logo se coloca en una columna responsive -->
       <div class="col-6 col-md-3 mb-4 text-center">
@@ -176,37 +178,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección Contacto -->
-  <section id="contacto" class="py-5 bg-secondary text-white">
-    <div class="container">
-      <h2 class="mb-4 text-center">Contáctanos</h2>
-      <div class="row justify-content-center">
-        <div class="col-md-8">
-          <form id="contactForm" novalidate>
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="nombre">Nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
-                <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
-              </div>
-              <div class="form-group col-md-6">
-                <label for="email">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
-                <div class="invalid-feedback">Ingresa un correo válido.</div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="mensaje">Mensaje</label>
-              <textarea class="form-control" id="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
-              <div class="invalid-feedback">Por favor ingresa un mensaje.</div>
-            </div>
-            <button type="submit" class="btn btn-light btn-block">Enviar</button>
-          </form>
         </div>
       </div>
     </div>
@@ -368,6 +339,37 @@
       </div>
     </div>
   </div>
+
+  <!-- Sección Contacto -->
+  <section id="contacto" class="py-5 bg-secondary text-white">
+    <div class="container">
+      <h2 class="mb-4 text-center">Contáctanos</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                <div class="invalid-feedback">Ingresa un correo válido.</div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+              <div class="invalid-feedback">Por favor ingresa un mensaje.</div>
+            </div>
+            <button type="submit" class="btn btn-light btn-block">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer / Redes Sociales -->
   <footer class="py-4 bg-dark text-white">
