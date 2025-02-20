@@ -1,217 +1,266 @@
 /* --- Fuente y Estilos Base --- */
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* Ajusta según la altura de tu navbar */
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem; /* 16px - tamaño base */
-    line-height: 1.6;
-  }
-  
-  /* --- Tipografía: Encabezados --- */
-  h1 {
-    font-size: 2.5rem; /* 40px */
-    font-weight: 700;
-  }
-  
-  h2 {
-    font-size: 2.2rem; /* 32px */
-    font-weight: 600;
-  }
-  
-  h3 {
-    font-size: 1.75rem; /* 28px */
-  }
-  
-  h4 {
-    font-size: 1.5rem; /* 24px */
-  }
-  
-  h5 {
-    font-size: 1.25rem; /* 20px */
-  }
-  
-  h6 {
-    font-size: 1rem; /* 16px */
-  }
-  
-  /* --- Navbar --- */
-  .navbar-custom {
-    background: linear-gradient(90deg, #0056b3, #17a2b8);
-  }
-  
-  .navbar-custom .navbar-brand,
-  .navbar-custom .nav-link {
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.5rem; /* 16px */
-    padding: 0.75rem; /* Mejor área de clic */
-  }
-  
-  .navbar-brand img {
-    height: 40px;
-    width: auto;
-    border-radius: 8px; /* Redondeo para una integración más suave */
-    padding: 2px; /* Padding opcional */
-    background: white; /* Fondo blanco si el logo no tiene transparencia */
-  }
-  
-  /* --- Botones --- */
-  .btn {
-    font-size: 1rem; /* 16px */
-    padding: 0.75rem 1.25rem; /* Tamaño accesible */
-  }
-  
-  .btn-custom {
-    background: #17a2b8;
-    color: #fff;
-    border: none;
-    transition: background 0.3s ease;
-    border-radius: 0;
-  }
-  
-  .btn-custom:hover {
-    background: #138496; /* Hover más oscuro */
-  }
-  
-  /* --- Secciones Generales --- */
-  section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-  
-  /* --- Hero Section --- */
-  .hero-section {
-    position: relative;
-    min-height: 100vh;
-    background: url('../../assets/img/hero/hero-image.png') no-repeat center center/cover;
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.2);  /* Fondo oscuro para mejorar legibilidad */
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    padding-top: 20vh;
-    color: #fff;
-  }
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Ajusta según la altura de tu navbar */
+}
 
-  .hero-content h1,
-  .hero-content p {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem; /* Tamaño base aumentado ligeramente a 18px para mejor legibilidad */
+  line-height: 1.6;    /* Aumentado line-height para mejor legibilidad */
+  color: #333333;       /* Nuevo color de texto principal: Gris Oscuro Sofisticado */
+}
 
-  .hero-content h2,
-  .hero-content p {
-    font-size: 2rem; 
-    font-weight: 600;
-  }
+/* --- Tipografía: Encabezados --- */
+h1 {
+  font-size: 2.5rem; /* 40px */
+  font-weight: 700;
+  line-height: 1.2;    /* Menor interlineado para títulos */
+}
+
+h2 {
+  font-size: 2.4rem; /* Aumentado a 2.4rem (aprox 38px) para mayor presencia */
+  font-weight: 700; /* Aumentado a 700 (negrita) para mayor presencia */
+  line-height: 1.2;
+  /* Nueva adición: text-shadow sutil */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); /* Sombra muy suave, casi imperceptible */
+}
+
+h3 {
+  font-size: 1.75rem; /* Ajustado a 28px */
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.2;
+}
+
+h5 {
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.2;
+}
+
+h6 {
+  font-size: 1rem; /* 16px */
+  line-height: 1.2;
+}
+
+/* --- Navbar --- */
+.navbar-custom {
+  background: #1E3A8A; /* Nuevo color primario: Azul Marino Suave para navbar */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.3rem; /* Reducido ligeramente a 1.3rem */
+  padding: 0.75rem; /* Mejor área de clic */
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+  border-radius: 8px; /* Redondeo para una integración más suave */
+  padding: 2px;
+  background: white; /* Fondo blanco si el logo no tiene transparencia */
+}
+
+/* --- Botones --- */
+.btn {
+  font-size: 1rem; /* 16px */
+  padding: 0.75rem 1.25rem;
+  border-radius: 5px; /* Añadido border-radius de 5px para botones */
+}
+
+.btn-custom {
+  background: #48BFE3; /* Nuevo color secundario/acento: Verde Azulado Tranquilo para botones */
+  color: #fff;
+  border: none;
+  transition: background 0.3s ease;
+}
+
+.btn-custom:hover {
+  background: #40a9c6; /* Color hover botón ligeramente oscurecido */
+}
+
+/* --- Secciones Generales --- */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #F0F0F0; /* Nuevo color terciario: Gris Cálido Claro para fondos de sección */
+}
+
+/* --- Hero Section --- */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  background: url('../../assets/img/hero/hero-image.png') no-repeat center center/cover;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 20vh;
+  color: #fff;
+}
+
+/* Cuadro semitransparente para el texto del hero */
+.hero-text-box {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+}
+
+/* Destacar títulos y subtítulos en el Hero */
+.hero-text-box h1 {
+  font-size: 2.5rem; /* 40px */
+  font-weight: 800;
+  line-height: 1.1;    /* Interlineado reducido */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text-box p {
+  font-size: 1.25rem;  /* Ajustado a 1.25rem para consistencia con body */
+  font-weight: 600;
+  line-height: 1.2;    /* Menor interlineado para mayor cohesión */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* --- Sección clientes --- */
+.section-clientes img {
+  border-radius: 5px; /* Ajusta el valor según desees */
+  transition: transform 0.3s ease-in-out; /* Transición suave para el hover */
+  filter: grayscale(100%); /* Inicialmente en blanco y negro */
+  transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out; /* Transiciones suaves */
+}
+
+.section-clientes img:hover {
+  transform: scale(1.05); /* Ligeramente más grande al pasar el ratón */
+  opacity: 0.9; /* Ligeramente más transparente */
+  filter: grayscale(0%); /* Vuelve al color al hacer hover */
+}
 
 
 /* --- Tarjetas (Card) --- */
-  .card {
-    border: 2px solid rgba(0, 0, 0, 0.15); /* Borde más visible */
-    border-radius: 8px; /* Suaviza los bordes */
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra inicial */
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    border-color: #17a2b8; /* Resalta el borde al pasar el mouse */
-  }
-  
-  /* --- Modal --- */
-  .modal-content {
-    border-radius: 0;
-  }
-  
-  .modal-header,
-  .modal-footer {
-    border: none;
-    background-color: #f8f9fa;
+.card {
+  border: 2px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Asegurado fondo blanco para tarjetas, consistencia con gris claro de secciones */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-color: #48BFE3; /* Nuevo color secundario para borde hover de tarjetas */
+}
+
+/* Resaltar el título de las tarjetas de servicio */
+.service-card .card-title {
+  font-weight: 600;
+  color: #1E3A8A; /* Nuevo color primario: Azul Marino Suave para títulos de tarjetas */
+  /*text-transform: uppercase;*/
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* --- Modal --- */
+.modal-content {
+  border-radius: 8px; /* Añadido border-radius de 8px para modales, consistencia */
+}
+
+.modal-header,
+.modal-footer {
+  border: none;
+  background-color: #F0F0F0; /* Nuevo color terciario: Gris Cálido Claro para fondo modal */
+}
+
+.service-card {
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-color: #48BFE3; /* Nuevo color secundario para borde hover de service cards */
+}
+
+.ver-mas {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 5px 0;
+  color: #48BFE3; /* Nuevo color secundario: Verde Azulado Tranquilo para "Ver más" */
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.ver-mas i {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .ver-mas {
+  color: #40a9c6; /* Color hover "Ver más" ligeramente oscurecido */
+}
+
+.service-card:hover .ver-mas i {
+  transform: translateX(5px);
+}
+
+/* --- Carrusel en Modal --- */
+.modal .carousel-item img {
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Footer --- */
+footer a {
+  color: #48BFE3; /* Nuevo color secundario para enlaces del footer */
+}
+
+footer a:hover {
+  color: #40a9c6; /* Color hover footer ligeramente oscurecido */
+}
+
+
+/* --- Estilos Responsivos --- */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2rem; /* 32px */
   }
 
-  .service-card {
-    cursor: pointer;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
+  h2 {
+      font-size: 1.75rem; /* 28px - Reducido también en responsive para mantener escala */
   }
-  
-  .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    border-color: #17a2b8;
+
+  body {
+      font-size: 1.15rem; /* Ajustado a 1.15rem (aprox 17px) en móviles para equilibrar legibilidad */
   }
-  
-  .ver-mas {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 5px 0;
-    color: #17a2b8;
-    margin-top: 10px;
-    transition: color 0.3s ease;
-  }
-  
-  .ver-mas i {
-    margin-left: 5px;
-    transition: transform 0.3s ease;
-  }
-  
-  .service-card:hover .ver-mas {
-    color: #138496;
-  }
-  
-  .service-card:hover .ver-mas i {
-    transform: translateX(5px);
-  }
-  
-  
-  /* --- Carrusel en Modal --- */
-  .modal .carousel-item img {
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* --- Footer --- */
-  footer a:hover {
-    color: #17a2b8;
-  }
-  
-  /* --- Estilos Responsivos --- */
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 2rem; /* 32px */
-    }
-  
-    h2 {
-      font-size: 1.75rem; /* 28px */
-    }
-  
-    body {
-      font-size: 1.4rem; /* 15px */
-    }
-  
-    .navbar-custom .navbar-brand,
-    .navbar-custom .nav-link {
+
+  .navbar-custom .navbar-brand,
+  .navbar-custom .nav-link {
       font-size: 1rem; /* 14px en dispositivos pequeños */
-    }
-  
-    .btn {
-      font-size: 0.875rem; /* 14px para dispositivos más pequeños */
-    }
   }
-  
+
+  .btn {
+      font-size: 0.875rem; /* 14px */
+  }
+}
